@@ -50,6 +50,7 @@ class App extends React.Component {
               exact
               path="/signin"
               render={() =>
+                // eslint-disable-next-line
                 this.props.currentUser ? <Redirect to="/"/> : <SignIn_SignUp />
               }
             />
