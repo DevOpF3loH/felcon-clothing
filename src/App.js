@@ -5,12 +5,13 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import "./App.css";
+import  "./App.css";
 import Homepage from "./pages/homepage/Homepage";
 import Shop from "./pages/shop/Shop";
 import Header from "./components/header/Header";
 import SignIn_SignUp from "./pages/sign-in_and_sign-up/SignIn-SignUp";
 import CheckoutPage  from "./pages/checkout/Checkout";
+import Contact from "./pages/contact/Contact";
 import { auth, createUserProfileDocument } from "./firebase/firebase";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
@@ -50,6 +51,7 @@ class App extends React.Component {
             <Route exact path="/" component={Homepage} />
             <Route path="/shop" component={Shop} />
             <Route exact path="/checkout" component={CheckoutPage} />
+            <Route exact path="/contact" component={Contact} />
             <Route
               exact
               path="/signin"

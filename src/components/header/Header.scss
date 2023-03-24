@@ -5,10 +5,21 @@
   justify-content: space-between;
   margin-bottom: 25px;
 
+  @media screen and (max-width: 800px) {
+    padding: 10px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
   .logo-container {
     height: 100%;
-    width: 70px;
-    padding: 25px;
+    display: flex;
+    width: 40%;
+    padding: 12px;
+
+    @media screen and (max-width: 800px) {
+      padding: 8px;
+    }
   }
 
   .options {
@@ -21,6 +32,12 @@
     .option {
       padding: 10px 15px;
       cursor: pointer;
+
+      @media screen and (max-width: 800px) {
+        padding: 10px;
+        font-size: 14px;
+      }
     }
   }
 }
+

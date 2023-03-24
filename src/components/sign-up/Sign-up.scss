@@ -5,5 +5,10 @@
 
   .title{
     margin: 10px 0;
+
+    @media screen and (max-width: 800px) {
+      font-size: 26px;   
+      text-align: left;
+    }
   }
 }
